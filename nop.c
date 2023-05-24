@@ -1,0 +1,13 @@
+#include "monty.h"
+
+/**
+ *m_nop - ...
+ *@head: ...
+ *@c: ...
+ *Return: ...
+ */
+void m_nop(stack_t **head, unsigned int c)
+{
+	(void)c;
+	(void)head;
+}

@@ -66,4 +66,5 @@ int main(int argc, char *argv[]);
 ssize_t custom_getline(char** lineptr, size_t* n, FILE* file);
 void free_stack(stack_t *head);
 void f_pint(stack_t **head, unsigned int counter);
+void m_nop(stack_t **head, unsigned int c);
 #endif
