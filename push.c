@@ -37,6 +37,7 @@ void m_push(stack_t **head, unsigned int c)
 		fprintf(stderr, "L%d: usage: push integer", c);
 			fclose(bus.file);
 			free(bus.content);
+			free_stack(*head);
 			exit(EXIT_FAILURE);
 	}
 	n = atoi(bus.arg);
