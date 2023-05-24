@@ -13,6 +13,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 	instruction_t command[] = {
 					{"push", m_push},
 					{"pall", m_pall},
+					{"pint", f_pint},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;
