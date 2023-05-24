@@ -38,6 +38,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 		fprintf(stderr, "L%d: unknown instruction %s\n", c, op);
 		fclose(file);
 		free(content);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	return (1);
