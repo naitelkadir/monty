@@ -13,6 +13,7 @@
 #include <fcntl.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -62,5 +63,5 @@ void addnode(stack_t **head, int n);
 void m_pall(stack_t **head, unsigned int c);
 int m_execute(char *content, stack_t **head, unsigned int c, FILE *file);
 int main(int argc, char *argv[]);
-
+ssize_t custom_getline(char** lineptr, size_t* n, FILE* file);
 #endif
