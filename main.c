@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
 		{
 			m_execute(content, &head, c, file);
 		}
-		free(content);
 	}
+	free(content);
 	free_stack(head);
 	fclose(file);
 	return (0);
