@@ -1,20 +1,24 @@
 #include "monty.h"
 
 /**
- *f_pint - ...
+ *m_pop - ...
  *@head: ...
  *@c: ...
  *Return: ...
  */
-void f_pint(stack_t **head, unsigned int c)
+void m_pop(stack_t **head, unsigned int c)
 {
+	stack_t *tmp;
+	
 	if (*head == NULL)
 	{
-		fprintf(stderr, "L<%u>: can't pint, stack empty\n", c);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", c);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	printf("%d\n", (*head)->n);
+	tmp = *head;
+	*head = tmp->next;
+	free(tmp);
 }

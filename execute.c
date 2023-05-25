@@ -16,6 +16,10 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 					{"pint", f_pint},
 					{"nop", m_nop},
 					{"add", m_add},
+					{"sub", m_sub},
+					{"div", m_div},
+					{"swap", m_swap},
+					{"pop", m_pop},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;

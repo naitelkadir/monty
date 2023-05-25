@@ -65,9 +65,15 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file);
 int main(int argc, char *argv[]);
 ssize_t custom_getline(char** lineptr, size_t* n, FILE* file);
 void free_stack(stack_t *head);
-void f_pint(stack_t **head, unsigned int counter);
+void f_pint(stack_t **head, unsigned int c);
 void m_nop(stack_t **head, unsigned int c);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void m_add(stack_t **head, unsigned int c);
+void m_pop(stack_t **head, unsigned int c);
+void m_swap(stack_t **head, unsigned int c);
+void m_sub(stack_t **head, unsigned int c);
+void m_div(stack_t **head, unsigned int c);
+
+
 #endif
