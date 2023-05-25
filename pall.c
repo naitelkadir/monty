@@ -12,7 +12,11 @@ void m_pall(stack_t **head, unsigned int c)
 	(void)c;
 	
 	tmp = *head;
-	while(tmp != NULL)
+	if (tmp == NULL)
+	{
+		return;
+	}
+	while(tmp)
 	{
 		printf("%d\n", tmp->n);
 		tmp = tmp->next;
