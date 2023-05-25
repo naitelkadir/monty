@@ -15,6 +15,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 					{"pall", m_pall},
 					{"pint", f_pint},
 					{"nop", m_nop},
+					{"add", m_add},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;

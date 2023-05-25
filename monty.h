@@ -69,4 +69,5 @@ void f_pint(stack_t **head, unsigned int counter);
 void m_nop(stack_t **head, unsigned int c);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
+void m_add(stack_t **head, unsigned int c);
 #endif
