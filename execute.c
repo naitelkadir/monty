@@ -20,6 +20,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 					{"div", m_div},
 					{"swap", m_swap},
 					{"pop", m_pop},
+					{"mul", m_mul},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;

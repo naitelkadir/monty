@@ -68,6 +68,6 @@ void m_pop(stack_t **head, unsigned int c);
 void m_swap(stack_t **head, unsigned int c);
 void m_sub(stack_t **head, unsigned int c);
 void m_div(stack_t **head, unsigned int c);
-
+void m_mul(stack_t **head, unsigned int c);
 
 #endif
