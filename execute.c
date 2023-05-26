@@ -22,6 +22,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 					{"pop", m_pop},
 					{"mul", m_mul},
 					{"mod", m_mod},
+					{"pchar", m_pchar},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;
