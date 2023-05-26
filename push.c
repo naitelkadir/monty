@@ -25,7 +25,7 @@ void m_push(stack_t **head, unsigned int c)
 		}
 		if (m == 1)
 		{
-			fprintf(stderr, "L<%d>: usage: push integer\n", c);
+			fprintf(stderr, "L%d: usage: push integer\n", c);
 			fclose(bus.file);
 			free(bus.content);
 			free_stack(*head);
@@ -34,7 +34,7 @@ void m_push(stack_t **head, unsigned int c)
 	}
 	else
 	{
-		fprintf(stderr, "L<%d>: usage: push integer\n", c);
+		fprintf(stderr, "L%d: usage: push integer\n", c);
 			fclose(bus.file);
 			free(bus.content);
 			free_stack(*head);
