@@ -19,9 +19,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 /**
  * struct instruction_s - opcode and its function
@@ -33,8 +33,8 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 /**
  * struct bus_s - ...
@@ -57,7 +57,7 @@ void addnode(stack_t **head, int n);
 void m_pall(stack_t **head, unsigned int c);
 int m_execute(char *content, stack_t **head, unsigned int c, FILE *file);
 int main(int argc, char *argv[]);
-ssize_t custom_getline(char** lineptr, size_t* n, FILE* file);
+ssize_t custom_getline(char **lineptr, size_t *n, FILE *file);
 void free_stack(stack_t *head);
 void f_pint(stack_t **head, unsigned int c);
 void m_nop(stack_t **head, unsigned int c);
