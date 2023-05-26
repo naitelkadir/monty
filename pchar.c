@@ -19,7 +19,7 @@ void m_pchar(stack_t **head, unsigned int c)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	if (tmp->n > 128 || tmp->n < 0)
+	if (tmp->n > 127 || tmp->n < 0)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", c);
 		fclose(bus.file);
