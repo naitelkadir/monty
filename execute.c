@@ -21,6 +21,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 					{"swap", m_swap},
 					{"pop", m_pop},
 					{"mul", m_mul},
+					{"mod", m_mod},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;
