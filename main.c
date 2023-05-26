@@ -26,8 +26,6 @@ int main(int argc, char *argv[])
 	if (!file)
 	{
 		fprintf(stderr, "ERROR: can't open file %s\n", argv[1]);
-		free_stack(head);;
-		fclose(file);
 		exit(EXIT_FAILURE);
 
 	}
