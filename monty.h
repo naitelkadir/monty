@@ -71,5 +71,6 @@ void m_div(stack_t **head, unsigned int c);
 void m_mul(stack_t **head, unsigned int c);
 void m_mod(stack_t **head, unsigned int c);
 void m_pchar(stack_t **head, unsigned int c);
+void m_pstr(stack_t **head, unsigned int c);
 
 #endif
