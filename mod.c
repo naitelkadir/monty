@@ -19,7 +19,7 @@ void m_mod(stack_t **head, unsigned int c)
 	}
 	if (m < 2)
 	{
-		fprintf(stderr, "L%d: can't mul, stack too short\n", c);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", c);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
