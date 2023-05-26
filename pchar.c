@@ -9,7 +9,7 @@
 void m_pchar(stack_t **head, unsigned int c)
 {
 	stack_t *tmp;
-	
+
 	tmp = *head;
 	if (tmp == NULL)
 	{
