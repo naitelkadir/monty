@@ -27,6 +27,7 @@ int m_execute(char *content, stack_t **head, unsigned int c, FILE *file)
 					{"rotl", m_rotl},
 					{"rotr", m_rotr},
 					{"queue",f_queue},
+					{"stack", m_stack},
 					{NULL, NULL}
 					};
 	unsigned int i = 0;

@@ -74,4 +74,5 @@ void m_pchar(stack_t **head, unsigned int c);
 void m_pstr(stack_t **head, unsigned int c);
 void m_rotl(stack_t **head, unsigned int c);
 void m_rotr(stack_t **head, unsigned int c);
+void m_stack(stack_t **head, unsigned int c);
 #endif
